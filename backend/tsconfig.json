@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",                    // JavaScript version to output
+    "module": "CommonJS",                  // Module system Node.js understands
+    "rootDir": "src",                      // Source files location
+    "outDir": "dist",                      // Output directory after compilation
+    "strict": true,                        // Enable all strict type-checking options
+    "esModuleInterop": true,               // Allow default imports from CommonJS modules
+    "moduleResolution": "node",            // Use Node.js module resolution
+    "sourceMap": true,                     // Generate source maps for debugging
+    "types": ["node"]                      // Include Node.js type definitions
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
+}
