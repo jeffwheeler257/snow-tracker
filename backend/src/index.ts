@@ -1,10 +1,11 @@
 import express from 'express';
-const app = express();
-const port = 3000;
+import snow from './routes/snow.route';
+import dotenv from 'dotenv';
 
-app.get('/', (req, res) => {
-  res.send('Hello World!');
-});
+dotenv.config();
+const app = express();
+const port = process.env.PORT;
+app.use('/snow', snow)
 
 app.listen(port, () => {
   return console.log(`Express is listening at http://localhost:${port}`);
